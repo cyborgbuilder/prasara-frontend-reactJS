@@ -1,25 +1,32 @@
 import React from 'react'
 import styled from 'styled-components'
-import SliderPage from './SliderPage'
+import SliderPage from './SliderPage';
+import Fade from 'react-reveal/Fade';
 
 function Panel() {
   return (
     <Container>
         <Wrap>
             <Content>
+                
             <Left>
-                <Box>
+               {/* <Fade left> */}
+               <Box>
                 <h1>OUR VISION</h1>
                 <img src='/images/vision.svg' />
                 <p>Our vision to be the most recognised premire organisation in washing and dyeing in south asia</p>
                 </Box>
+               {/* </Fade> */}
             </Left>
+            
             <Right>
-                <Box>
+               {/* <Fade right> */}
+               <Box>
                 <h1>OUR MISSION</h1>
                 <img src='/images/mission.svg' />
                 <p>Our vision to be the most recognised premire organisation in washing and dyeing in south asia, the most recognised premire organisation in washing and dyeing in south asia</p>
                 </Box>
+               {/* </Fade> */}
             </Right>
             </Content>
             <ContentTwo>
@@ -38,6 +45,7 @@ function Panel() {
                     <h2>We are using standard quality systems when do above productions for give the good & success production to our customers.</h2>
                 </RightTwo>
             </ContentTwo>
+         
         </Wrap>
 
     </Container>
@@ -124,6 +132,11 @@ border-top: 2px solid #6C63FF;
 transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
   cursor: pointer;
 
+  @media only screen and (max-width: 1200px){
+    width: 90%;
+}
+  
+
 &:hover{
     box-shadow: rgb(0 0 0 / 80%) 0px 40px 58px -16px, rgb(0 0 0 / 72%) 0px 30px 22px -10px;
 }
@@ -165,8 +178,13 @@ border-top: 2px solid #6C63FF;
 transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
   cursor: pointer;
 
+  &:hover{
+    box-shadow: rgb(0 0 0 / 80%) 0px 40px 58px -16px, rgb(0 0 0 / 72%) 0px 30px 22px -10px;
+}
+
   @media only screen and (max-width: 1200px){
     flex-direction: column;
+    width: 90%;
     
 }
 
@@ -193,6 +211,8 @@ const LeftTwo = styled.div`
 
 const RightTwo = styled.div`
     width: 60%;
+
+  
 
     @media only screen and (max-width: 1200px){
         width: 100%;

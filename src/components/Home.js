@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import Navigation from './Navigation'
 
 
 
@@ -27,9 +28,9 @@ function Home() {
             
         </Wrap>
 
-        <Logo>
+        {/* <Logo>
               <img src='/images/logo.png' />
-            </Logo>
+            </Logo> */}
 
             
 
@@ -61,6 +62,10 @@ const Wrap = styled.div`
   flex-direction: column;
   align-items: center;
 
+  @media only screen and (max-width: 1200px){
+    width: 85%;
+  }
+
   img{
     width: 95%;
   }
@@ -72,9 +77,13 @@ const Text = styled.div`
 
 
   h1{
-    font-size: 120px;
+    font-size: 150px;
     text-align: center;
-    font-family: 'Righteous', cursive;
+    font-family: 'Libre Barcode 128 Text', cursive;
+
+    @media only screen and (max-width: 1200px){
+      font-size: 100px;
+    }
   }
 
  
@@ -87,6 +96,12 @@ const Text = styled.div`
       letter-spacing: 1.1px;
       line-height: 2.1rem;
       font-family: 'Satisfy', cursive;
+      margin: 20px 0;
+
+      @media only screen and (max-width: 1200px){
+        font-size: 20px;
+       
+      }
     }
 
     h3{
@@ -108,6 +123,10 @@ const Logo = styled.div`
   top: 0;
   left: 10px;
   z-index: 1;
+
+  @media only screen and (max-width: 1200px){
+    width: 80px;
+  }
 
   img{
     width: 100%;

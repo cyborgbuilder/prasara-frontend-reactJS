@@ -120,7 +120,7 @@ function SliderPage() {
 }
 const Container = styled.div`
     width: 100%;
-    height: 120vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -128,6 +128,7 @@ const Container = styled.div`
     background-color: #f1f1f1;
     background-size: contain;
     background-repeat: no-repeat;
+    
 
     
     @media only screen and (max-width: 1200px){
@@ -148,6 +149,7 @@ const Header = styled.div`
 
     h1{
         font-size: 80px;
+        
 
         
     @media only screen and (max-width: 1200px){
@@ -159,15 +161,21 @@ const Header = styled.div`
 
 const Wrap = styled.div`
     width: 90%;
+    height: 75vh;
     background: #6C63FF;
     border-radius: 15px;
     margin-top: 30px ;
     border-top: 2px solid #6C63FF;
 
+    @media only screen and (max-width: 1200px){
+        height: 60vh;
+    }
+
 `
 
 const SliderWrap = styled.div`
     display: flex;
+    height: 74vh;
     
     justify-content: center;
     align-items: center;
@@ -176,6 +184,10 @@ const SliderWrap = styled.div`
     background: #fff;
     border-radius: 15px;
     opacity: 0.9;
+
+    @media only screen and (max-width: 1200px){
+        height: 59vh;
+    }
 
 `
 const Image = styled.div`
@@ -203,6 +215,7 @@ const Text = styled.div`
     
     h1{
         font-size: 46px;
+
 
         
     @media only screen and (max-width: 1200px){
